@@ -21,7 +21,3 @@ docker run -it --rm -p=0.0.0.0:9222:9222 --name=chrome-headless -v /tmp/chromeda
 Inspired by
 - [beaufortfrancois](https://github.com/beaufortfrancois/download-chromium)
 - [National Library of Norway](https://github.com/nlnwa/docker-chrome-headless)
-
-If this image is useful, please consider donating:
-
-[![Donate!](https://donate.alpeware.com/static/donate.png?foo)](https://donate.alpeware.com/)
