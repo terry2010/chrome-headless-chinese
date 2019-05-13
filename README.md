@@ -1,3 +1,8 @@
+基于 https://hub.docker.com/r/alpeware/chrome-headless-trunk  镜像简单修改后生成
+
+仅添加供正常显示用的中文字体。 如果需要和windows显示效果一致，需要把windows字体拷到容器内
+
+
 # Chromium Headless Trunk
 
 Using the binary from the Chromium snapshot bucket
