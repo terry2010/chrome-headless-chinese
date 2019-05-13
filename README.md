@@ -7,6 +7,10 @@
 在 Ubuntu 18.04 LTS 上安装 Microsoft Windows 字体
 ```
 
+如果可以在物理机上安装， 可以参考下面这个安装方式
+
+https://github.com/terry2010/centos7-fast-init/tree/master/headless-chrome
+
 
 # Chromium Headless Trunk
 
