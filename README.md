@@ -2,6 +2,11 @@
 
 仅添加供正常显示用的中文字体。 如果需要和windows显示效果一致，需要把windows字体拷到容器内
 
+具体方法请自行搜索关键词
+```
+在 Ubuntu 18.04 LTS 上安装 Microsoft Windows 字体
+```
+
 
 # Chromium Headless Trunk
 
