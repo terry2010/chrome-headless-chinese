@@ -11,16 +11,19 @@
 
 https://github.com/terry2010/centos7-fast-init/tree/master/headless-chrome
 
+### 启动方式
 
-# Chromium Headless Trunk
+#### 当主机的docker 是host模式启动的时候，推荐使用传递参数的方式启动
+```
+docker run -it --rm -e DEBUG_ADDRESS="0.0.0.0" -e DEBUG_PORT="9226" -e CHROME_OPTS="--proxy-server=\"http=127.0.0.1:1080;https=127.0.0.1:10443\"" --net=host --name=chrome-headless-proxy -v /tmp/chromedata/:/data terry2010/chrome-headless-chinese
+```
 
-Using the binary from the Chromium snapshot bucket
-
-![logo](https://lh4.googleusercontent.com/nOnP0piSjn9Wq3d821zhgtJbiL77VYLShSZdACIjTU86yydgurOchQFhpDIJhFouc4O0Pjc5QN4z-FvAgxaEvTdUsvEgADtFv_gkd4dNXsaLyynG3mzDtg2O51OB7YfbtDW49GFP "Logo")
+#### 当主机的docker 是bridge模式启动的时候，推荐使用转发端口方式启动
 
 ```
 docker run -it --rm -p=0.0.0.0:9222:9222 --name=chrome-headless -v /tmp/chromedata/:/data terry2010/chrome-headless-chinese
 ```
+
 
 Inspired by
 - [beaufortfrancois](https://github.com/beaufortfrancois/download-chromium)
