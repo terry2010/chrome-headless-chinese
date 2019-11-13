@@ -4,6 +4,8 @@ LABEL maintainer "Alpeware <info@alpeware.com>"
 
 ENV REV=681195
 
+ENV DEBIAN_FRONTEND noninteractive
+
 EXPOSE 9222
 
 RUN apt-get update -qqy \
